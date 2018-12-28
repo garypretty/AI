@@ -528,7 +528,7 @@ namespace AutomotiveSkill.Common
             return validity;
         }
 
-        private IList<T> ApplySelectionToSettings<T>(AutomotiveSkillState state, List<string> settingEntities, IList<T> changesOrStatuses)
+        public IList<T> ApplySelectionToSettings<T>(AutomotiveSkillState state, List<string> settingEntities, IList<T> changesOrStatuses)
             where T : SettingOperation
         {
             if (state == null)
